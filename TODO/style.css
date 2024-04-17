@@ -1,0 +1,69 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #066acd; 
+}
+
+h1 {
+    text-align: center;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#new-task {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#priority, #due-date {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-task {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-list li.low {
+    background-color: #f0f8ff;
+}
+
+#task-list li.medium {
+    background-color: #ffffcc;
+}
+
+#task-list li.high {
+    background-color: #ffcccc;
+}
+
+#task-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
